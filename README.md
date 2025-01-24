@@ -48,10 +48,12 @@ Bu proje, kullanıcıların yazılı sorularını alarak eğitilmiş bir yapay z
 3. **Hataları Kontrol Edin:** Eğer bir sorun oluşursa, uygun bir hata mesajı görünecektir.
 
 ```
-
+<img width="1506" alt="botito" src="https://github.com/user-attachments/assets/27500cf8-f982-4a6f-9dae-277a1bf1db46" />
+```
 ## Lisans
 
 Bu proje [MIT Lisansı](LICENSE) kapsamında sunulmaktadır.
 
-<img width="1506" alt="botito" src="https://github.com/user-attachments/assets/27500cf8-f982-4a6f-9dae-277a1bf1db46" />
+
+
 
