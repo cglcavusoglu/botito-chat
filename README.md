@@ -5,7 +5,7 @@
 
 
 ## Proje Hakkında
-Botito, kullanıcıların doğal dilde sordukları soruları anlamlandırarak cevap verebilen bir yapay zeka tabanlı sohbet botudur. Bu proje, [Google Gemini API](https://aistudio.google.com) kullanılarak özelleştirilmiş ve verimli bir şekilde çalışması için eğitilmiştir. 
+Botito, kullanıcıların doğal dilde sordukları soruları anlamlandırarak cevap verebilen bir yapay zeka tabanlı sohbet botudur. Bu proje, [Google Gemini API](https://aistudio.google.com) kullanılarak özelleştirilmiş ve verimli bir şekilde çalışması için kendi oluşturduğum basit yapay zeka soru-cevap veri seti ile eğitilmiştir.  
 
 ### Özellikler
 - **Doğal Dil İşleme (NLP):** Kullanıcıların metinlerini analiz ederek anlamlı yanıtlar üretir.
