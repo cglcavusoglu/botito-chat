@@ -1,50 +1,57 @@
-# React + TypeScript + Vite
+# Yapay Zeka Soru-Cevap Sistemi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, kullanıcıların yazılı sorularını alarak eğitilmiş bir yapay zeka modeline gönderen ve modelin yanıtlarını gösteren bir web tabanlı uygulamadır. Uygulama, React ve Google Gemini API'sini kullanarak hayata geçirilmiştir.
 
-Currently, two official plugins are available:
+## Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Kullanıcı Soruları:** Kullanıcıların yazdığı soruları bir giriş kutusundan alır.
+- **Yapay Zeka Yanıtları:** Eğitilmiş yapay zeka modeli tarafından verilen yanıtları kullanıcıya gösterir.
+- **Hata Yönetimi:** API çağrılarında hata oluşursa kullanıcıya uygun bir hata mesajı gösterir.
+- **Dinamik Mesajlaşma:** Mesajlar kullanıcı ve bot arasında dinamik olarak görüntülenir.
+- **Modern Arayüz:** Kullanıcı dostu bir arayüz ile estetik bir deneyim sunar.
 
-## Expanding the ESLint configuration
+## Kullanılan Teknolojiler
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React:** Uygulama arayüzünü oluşturmak için kullanılan JavaScript kütüphanesi.
+- **Google Gemini API:** Yapay zeka modeli ile iletişim kurmak için kullanılır.
+- **Tailwind CSS:** Modern ve şık bir kullanıcı arayüzü için stil tasarımı.
+- **Axios:** API çağrıları için kullanılan HTTP istemcisi.
 
-- Configure the top-level `parserOptions` property like this:
+## Kurulum ve Çalıştırma
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Gereksinimler
+- Node.js (>=14.x)
+- npm veya yarn paket yöneticisi
+
+### Adımlar
+
+1. Projeyi klonlayın:
+   ```bash
+   git clone https://github.com/kullanici-adi/yapay-zeka-soru-cevap.git
+   cd yapay-zeka-soru-cevap
+   ```
+
+2. Gerekli bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
+
+3. Uygulamayı çalıştırın:
+   ```bash
+   npm start
+   ```
+
+## Kullanım
+
+1. **Soru Sorun:** Giriş kutusuna bir soru yazın ve "Gönder" butonuna tıklayın.
+2. **Yanıtları Görün:** Yapay zeka tarafından üretilen yanıtlar "Botito" bölümünde görüntülenir.
+3. **Hataları Kontrol Edin:** Eğer bir sorun oluşursa, uygun bir hata mesajı görünecektir.
+
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Lisans
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Bu proje [MIT Lisansı](LICENSE) kapsamında sunulmaktadır.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<img width="1506" alt="botito" src="https://github.com/user-attachments/assets/27500cf8-f982-4a6f-9dae-277a1bf1db46" />
+
