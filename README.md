@@ -33,11 +33,8 @@ Botito, kullanıcıların doğal dilde sordukları soruları anlamlandırarak ce
    ```bash
    npm install
    ```
-
-3. **API Anahtarını Ekleyin:**
-   `src/lib/gemini.js` dosyasını açarak `API_KEY` kısmını kendi anahtarınızla değiştirin.
-
-4. **Uygulamayı Başlatın:**
+   
+3. **Uygulamayı Başlatın:**
    ```bash
    npm run dev
    ```
