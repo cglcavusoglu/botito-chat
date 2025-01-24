@@ -41,7 +41,7 @@ Botito, kullanıcıların doğal dilde sordukları soruları anlamlandırarak ce
    ```bash
    npm run dev
    ```
-   Tarayıcınızda [http://localhost:5173](http://localhost:5173) adresine giderek uygulamayı görüntüleyebilirsiniz.
+   Tarayıcınızda https://botito.netlify.app adresine giderek uygulamayı görüntüleyebilirsiniz.
 
 ---
 
