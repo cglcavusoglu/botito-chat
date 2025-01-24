@@ -1,59 +1,58 @@
-# Yapay Zeka Soru-Cevap Sistemi
+# Botito - Yapay Zeka Soru-Cevap Sistemi
 
-Bu proje, kullanıcıların yazılı sorularını alarak eğitilmiş bir yapay zeka modeline gönderen ve modelin yanıtlarını gösteren bir web tabanlı uygulamadır. Uygulama, React ve Google Gemini API'sini kullanarak hayata geçirilmiştir.
+<img width="1506" alt="botito" src="https://github.com/user-attachments/assets/27500cf8-f982-4a6f-9dae-277a1bf1db46" />
+<img width="1370" alt="train" src="https://github.com/user-attachments/assets/6d435071-c980-49e4-b0f8-65dda3a6f5f1" />
 
-## Özellikler
 
-- **Kullanıcı Soruları:** Kullanıcıların yazdığı soruları bir giriş kutusundan alır.
-- **Yapay Zeka Yanıtları:** Eğitilmiş yapay zeka modeli tarafından verilen yanıtları kullanıcıya gösterir.
-- **Hata Yönetimi:** API çağrılarında hata oluşursa kullanıcıya uygun bir hata mesajı gösterir.
-- **Dinamik Mesajlaşma:** Mesajlar kullanıcı ve bot arasında dinamik olarak görüntülenir.
-- **Modern Arayüz:** Kullanıcı dostu bir arayüz ile estetik bir deneyim sunar.
+## Proje Hakkında
+Botito, kullanıcıların doğal dilde sordukları soruları anlamlandırarak cevap verebilen bir yapay zeka tabanlı sohbet botudur. Bu proje, [Google Gemini API](https://aistudio.google.com) kullanılarak özelleştirilmiş ve verimli bir şekilde çalışması için eğitilmiştir. 
 
-## Kullanılan Teknolojiler
+### Özellikler
+- **Doğal Dil İşleme (NLP):** Kullanıcıların metinlerini analiz ederek anlamlı yanıtlar üretir.
+- **Eğitilmiş Model Kullanımı:** Özel olarak hazırlanmış bir dataset ile model eğitimi yapılmıştır.
+- **Gerçek Zamanlı Yanıtlar:** Kullanıcının sorularına hızlı ve doğru cevaplar sağlar.
+- **Modern UI:** Kullanıcı dostu bir arayüz ile interaktif bir deneyim sunar.
 
-- **React:** Uygulama arayüzünü oluşturmak için kullanılan JavaScript kütüphanesi.
-- **Google Gemini API:** Yapay zeka modeli ile iletişim kurmak için kullanılır.
-- **Tailwind CSS:** Modern ve şık bir kullanıcı arayüzü için stil tasarımı.
-- **Axios:** API çağrıları için kullanılan HTTP istemcisi.
+---
 
 ## Kurulum ve Çalıştırma
 
 ### Gereksinimler
-- Node.js (>=14.x)
-- npm veya yarn paket yöneticisi
+- Node.js (>=16.0)
+- NPM veya Yarn
+- Google Gemini API erişimi (API anahtarı gereklidir)
 
 ### Adımlar
-
-1. Projeyi klonlayın:
+1. **Projeyi Klonlayın:**
    ```bash
-   git clone https://github.com/kullanici-adi/yapay-zeka-soru-cevap.git
-   cd yapay-zeka-soru-cevap
+   git clone https://github.com/kullanici/botito.git
+   cd botito
    ```
 
-2. Gerekli bağımlılıkları yükleyin:
+2. **Bağımlılıkları Yükleyin:**
    ```bash
    npm install
    ```
 
-3. Uygulamayı çalıştırın:
+3. **API Anahtarını Ekleyin:**
+   `src/lib/gemini.js` dosyasını açarak `API_KEY` kısmını kendi anahtarınızla değiştirin.
+
+4. **Uygulamayı Başlatın:**
    ```bash
-   npm start
+   npm run dev
    ```
+   Tarayıcınızda [http://localhost:5173](http://localhost:5173) adresine giderek uygulamayı görüntüleyebilirsiniz.
+
+---
 
 ## Kullanım
 
-1. **Soru Sorun:** Giriş kutusuna bir soru yazın ve "Gönder" butonuna tıklayın.
-2. **Yanıtları Görün:** Yapay zeka tarafından üretilen yanıtlar "Botito" bölümünde görüntülenir.
-3. **Hataları Kontrol Edin:** Eğer bir sorun oluşursa, uygun bir hata mesajı görünecektir.
+1. **Bir Soru Sorun:** Sohbet kutusuna herhangi bir soru yazın.
+2. **Cevap Alın:** Botito, sizin için en uygun cevabı üretir.
+3. **Deneyimi Keşfedin:** Daha fazla soru sorarak Botito'nun kapasitesini test edin!
 
-```
-<img width="1506" alt="botito" src="https://github.com/user-attachments/assets/27500cf8-f982-4a6f-9dae-277a1bf1db46" />
-```
+---
+
 ## Lisans
 
-Bu proje [MIT Lisansı](LICENSE) kapsamında sunulmaktadır.
-
-
-
-
+Bu proje MIT lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına göz atabilirsiniz.
